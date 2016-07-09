@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:title="My Feed" />
+
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/ic_diary"
+            android:title="Diary" />
+        <item
+            android:id="@+id/nav_nutrition"
+            android:icon="@drawable/ic_nutrition_profile"
+            android:title="Nutrition" />
+        <item
+            android:id="@+id/nav_food_order"
+            android:icon="@drawable/ic_food_order"
+            android:title="Order Food" />
+        <item
+            android:id="@+id/nav_programs"
+            android:icon="@drawable/ic_programs"
+            android:title="Programs" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_report"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@drawable/ic_reminder"
+            android:title="Reminders" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

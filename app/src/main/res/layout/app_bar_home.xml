@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fab_options"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fab_bg"
+        android:paddingBottom="100dp"
+        android:paddingRight="25dp"
+        android:gravity="bottom|end"
+        android:visibility="gone">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_padding_big"
+            android:layout_marginBottom="@dimen/layout_padding_small"
+            android:src="@drawable/ic_add"
+            android:onClick="miniFabClick"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabSize="mini"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fab2"
+            android:layout_marginRight="@dimen/layout_padding_xsmall"
+            android:layout_alignBottom="@+id/fab2"
+            android:padding="@dimen/layout_padding_small"
+            android:textColor="@android:color/white"
+            android:text="Water"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab2"
+            android:layout_marginLeft="@dimen/layout_padding_big"
+            android:layout_marginBottom="@dimen/layout_padding_small"
+            android:src="@drawable/ic_add"
+            android:onClick="miniFabClick"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabSize="mini"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fab3"
+            android:layout_marginRight="@dimen/layout_padding_xsmall"
+            android:layout_alignBottom="@+id/fab3"
+            android:padding="@dimen/layout_padding_small"
+            android:textColor="@android:color/white"
+            android:text="Food"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fab3"
+            android:layout_marginLeft="@dimen/layout_padding_big"
+            android:layout_marginBottom="@dimen/layout_padding_small"
+            android:src="@drawable/ic_add"
+            android:onClick="miniFabClick"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:fabSize="mini"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/fab4"
+            android:layout_marginRight="@dimen/layout_padding_xsmall"
+            android:layout_alignBottom="@+id/fab4"
+            android:padding="@dimen/layout_padding_small"
+            android:textColor="@android:color/white"
+            android:text="Mood"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add" />
+
+</android.support.design.widget.CoordinatorLayout>
